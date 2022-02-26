@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rimworld Integration - Twitch Framework Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <p>Sending data to the game. Please, do not close the page.</p>
+    <script>
+        var fragments = this.location.hash;
+
+        if (fragments) {
+            var query = fragments.replace('#', '?');
+            var redirect = window.location.href.split('#')[0] + query;
+
+            this.location.replace(redirect);            
+        }
+    </script>
+</body>
+
+</html> 
